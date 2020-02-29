@@ -1,14 +1,21 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>login</ion-title>
+    <ion-title>Login</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <ion-input type="text" placeholder="Email" [(ngModel)]="email">Email</ion-input>
-  <ion-input type="Password" placeholder="Password"[(ngModel)]="password">Password</ion-input>
-  <ion-button (click)="validar()" expand="block" fill="clear" shape="round">
+  <div class="div">
+    <ion-item>
+      <ion-icon name="person"></ion-icon><ion-label position='floating'>Username</ion-label>
+  <ion-input shape="round" type="text" class="input" [(ngModel)]="email"></ion-input>
+  </ion-item><br>
+  <ion-item>
+    <ion-icon name="lock-closed-outline"></ion-icon><ion-label position='floating'>Password</ion-label>
+  <ion-input type="Password" [(ngModel)]="password"></ion-input>
+  </ion-item>
+  <ion-button (click)="validar()" expand="block" fill="clear" shape="round"  position="inline" size="12">
     Ingresar
   </ion-button>
-
+  </div>
 </ion-content>

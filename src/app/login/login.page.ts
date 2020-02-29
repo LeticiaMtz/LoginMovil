@@ -11,7 +11,7 @@ export class LoginPage implements OnInit {
   email: String;
   password: String;
   async validar(){
-    if(this.email == '123' && this.password=='123'){
+    if( this.password=='123'){
          alert('Logeado')
          location.pathname= 'tabs/tab1'
     }else{
